@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/bowling.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Three.js</title>
+    <style>
+      body{
+        margin: 0;
+        padding: 0%;
+        box-sizing: border-box;  
+      }
+      body,html{
+        overflow: hidden;
+      }
+      .webgl{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+      .nav{
+        color: white;
+        z-index: 2;
+        position: relative;
+        padding: 1rem 8rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .nav ul{
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+      }
+      .nav ul li{
+        margin: 0 10px;
+      }
+      .nav h1{
+        font-size: 2rem;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      nav ul{
+        list-style: none;
+        display: flex;
+        gap: 4rem;
+      }
+      .title{
+        color: white;
+        z-index: 2;
+        position: absolute;
+        transform: translate(-50%,-75%);
+        text-align: center;
+        font-size: 3rem;
+        font-weight: bold;
+        left: 50%;
+        top:75%;
+      }
+    </style>
+  </head>
+  <body>
+
+    <canvas class="webgl"></canvas>
+    <nav class="nav">
+      <h1>Bowling Three.js</h1>
+      <ul>
+        <li>Play</li>
+        <li>Sphere</li>
+      </ul>
+    </nav>
+    <h1 class="title">Give it a spin</h1>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
